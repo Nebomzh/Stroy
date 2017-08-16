@@ -4,13 +4,23 @@ body {
 a, a:hover, a:focus {
   text-decoration: none;
 }
-
-.btn.btn-success {
-  color: #fff;
+.btn-lg {
+  color: #ffffff;
   background-color: #1e9509;  
+  border-radius: 0;  
+  border-style: none;
+}
+
+.btn-lg:hover,
+.btn-lg:focus,
+.btn-lg:active {
+  color: #ffffff;
+  background-color: #39bc22;  
+}
+
+.btn.btn-success { 
   padding: 6px 1px 0 0;
-  margin-left: 15px;
-  border-radius: 0;
+  margin-left: 15px;  
   font-size: 16px;
   line-height: 1;
   height: 27px !important;
@@ -18,7 +28,7 @@ a, a:hover, a:focus {
 }
 
 .btn.btn-success:hover {
-  color: #fff;
+  color: #ffffff;
   background-color: #39bc22;  
 }
 
@@ -164,8 +174,7 @@ section {
 /*Первый слайд*/
     #house {
         height: 635px;        
-        background: url(images/Layer23.png) no-repeat 50% 50%;
-        background-size: cover;    
+        background: fixed url(images/Layer23.png) no-repeat 0 121px;    
         margin: 121px 0 215px 0;        
     }
     #house .box {
@@ -175,7 +184,7 @@ section {
         height: 265px;
         width: 765px;
         padding: 50px;
-        background: #fff;  
+        background: #ffffff;  
         opacity: 0.8;  
     }
     #house h1 {
@@ -319,16 +328,6 @@ section {
         height: 499px;
         z-index:213;
     } 
-
-    #main-slider {
-    background-image: url(images/slider-bg.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    padding: 200px 0;
-    color: #fff;
-    }
 .center {
     text-align: center;
 }
@@ -364,7 +363,42 @@ section {
         font-size: 16px;
         line-height: 24px;
     }
+.form-group {
+    background: fixed url(images/Layer37.png) repeat-y 50% 121px;
+    height: 225px;
+    position: relative;
+}
+.form-group::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #2b2a29;
+    opacity: 0.8;
+}
+.btn-primary { 
+    position: relative;
+    height: 63px;
+    width: 367px;
+    margin-top: 81px;
+    font-family: "MyriadPro-Semibold";
+    font-size: 34px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
 /*Что-то дальше*/
+#main-slider {
+    background-image: url(images/slider-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    padding: 200px 0;
+    color: #fff;
+}
 #main-slider .item {
     -moz-transition: opacity ease-in-out 500ms;
     -o-transition: opacity ease-in-out 500ms;
