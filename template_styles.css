@@ -35,6 +35,7 @@ a, a:hover, a:focus {
 .container {
     padding: 0;        
     height: 100%;
+    position: relative;
 }
 .infoblock {  
   height: 76px;
@@ -107,11 +108,9 @@ a, a:hover, a:focus {
     background-color: #ffffff;
     overflow: hidden;
 }
-
 .navbar-header {
     height: 100%;
 }
-
 .navbar-default .navbar-brand {    
     width: 230px;
     height: 100%;
@@ -143,7 +142,6 @@ a, a:hover, a:focus {
     display: inline-block;
     margin: 0 15px;
 }
-
 .navbar-default .navbar-nav > li.active > a,
 .navbar-default .navbar-nav > li.active:focus > a,
 .navbar-default .navbar-nav > li.active:hover > a,
@@ -163,8 +161,32 @@ a, a:hover, a:focus {
     width: 100vw;
     background: url(images/Layer23.png) no-repeat 50% 50%;
     background-size: cover;    
-    margin: 121px 0 100px 0;    
-    color: #fff;    
+    margin: 121px 0 100px 0;        
+}
+#house .box {
+    position: absolute;
+    top: 202px;
+    left: 0;
+    height: 265px;
+    width: 765px;
+    padding: 50px;
+    background: #fff;  
+    opacity: 0.8;  
+}
+#house h1 {
+    font-family: "MyriadPro-Semibold";
+    font-size: 34px;
+    color: #1e1e1e;
+    margin: -5px 0 20px 0;
+    text-transform: uppercase;
+    line-height: 42px;
+}
+#house h2 {
+    font-family: "MyriadPro-Regular";
+    font-size: 16px;
+    color: #2d2d2d;
+    margin: 0;
+    line-height: 24px;
 }
 #main-slider {
     background-image: url(images/slider-bg.jpg);
@@ -272,27 +294,7 @@ a, a:hover, a:focus {
     -moz-box-shadow: none;
     box-shadow: none;
 }
-.box {
-    padding: 50px 30px;
-    background: #fff;
 
-    position: relative;
-}
-.box.first {
-    margin-top: -40px;
-    border-radius: 5px;
-}
-.box.last {
-    border-radius: 0 0 5px 5px;
-}
-.box h2 {
-    padding: 10px 30px;
-    display: inline-block;
-    border-radius: 4px;
-    position: relative;
-
-    font-size: 48px;
-}
 #portfolio .box {
     background: #f3f3f3;
 }

@@ -73,13 +73,10 @@
 
 <section id="house" class="col-sm-12">
 <div class="container">
-    <div class="box first" style="background: #ffb200; margin-top: -100px; margin-bottom: -400px; position: absolute;">
-    <div class="row">
-        <h1 style="text-align: center; color: #000;">Утеплите ваш дом и экономьте до 68% на отоплении</h1>
-    <p class="h2">Экструзионный пенополистирол или XPS - один из самых популярных утеплителей.<br>Наиболее известен под названиями брендов Пенплэкс и Технониколь.<br>Отлично подходит для утепления фундаментов, балконов и всего, где важно сохранить тепло.</p><img class="img-responsive" align="left" style="margin-bottom: -500px; margin-top: 100px; position: relative;" src="<?=SITE_TEMPLATE_PATH?>/images/block_text.png">
-    </div>    
+    <div class="box first">
+        <h1>Утеплите ваш дом и cэкономьте <br>до 68% на отоплении</h1>
+        <h2>Экструзионный пенополистирол или XPS - один из самых популярных утеплителей.<br>Наиболее известен под названиями брендов Пенплэкс и Технониколь.<br>Отлично подходит для утепления фундаментов, балконов и всего, где важно сохранить тепло.</h2>
     </div>
-
 </div>
 </section>
 <!-- <?$APPLICATION->IncludeComponent("bitrix:news.list", "slider", Array(
