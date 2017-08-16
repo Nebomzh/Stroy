@@ -37,283 +37,290 @@ a, a:hover, a:focus {
     height: 100%;
     position: relative;
 }
-.infoblock {  
-  height: 76px;
-  width: 525px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: #1e1e1e;
-  font-family: "MyriadPro-Regular";
-  font-size: 14px;   
-}
-.infoblock > div{
-  display: inline-block;  
-  margin-top: 21px;
-}
-.phones {
-  height: 39px;
-  position: absolute;  
-  top: 0;
-  left: 0;
-}
-.icon-phone {
-  font-size: 18px;  
-  position: relative;
-  right: 6px;
-  top: 1px;
-}
-.phone_text a {
-  font-size: 20px;  
-  color: #1e1e1e;    
-}
-.phones .order_wrap_btn {
-    display: block;
-    position: absolute;   
-    right: 0; 
-    bottom: 0;
-    color: #1e9509;      
-    line-height: 1;
-}
-.adress {
-  width: 348px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  text-align: right;
-}
-.icon-map-marker {
-  font-size: 19px;
-  position: absolute;
-  top: 4px;
-  right: 302px;
-}
-.adress_text1, .adress_text2 {
-  color: #2d2d2d;
-}
-.adress_text1{
-  position: relative;
-  top: 6px;
-}
-.adress_text2 {
-  position: relative;
-  top: 2px;
-}
-.navbar-default {    
-    border: 0;
-    padding: 0 0 1px 1px;    
-    margin: 0;
-    border-radius: 0;
-    height: 100%;
-    background-color: #ffffff;
-    overflow: hidden;
-}
-.navbar-header {
-    height: 100%;
-}
-.navbar-default .navbar-brand {    
-    width: 230px;
-    height: 100%;
-    padding: 0;      
-    background: url(images/logo.png) no-repeat 50% 50%;
-    background-size: contain;
-}
-.navbar-default .navbar-nav{
+/*Контакты*/
+    .infoblock {  
+    height: 76px;
+    width: 525px;
     position: absolute;
+    top: 0;
     right: 0;
-    bottom: 0;
-    margin-bottom: 18px;    
-    font-family: "MyriadPro-Regular";
-    font-size: 16px;
-    text-transform: uppercase;
-}
-.navbar-default .navbar-nav > li > a {
-  padding: 7px 15px 0 15px;
-  height: 27px;
-  font-size: 16px;
-  line-height: 1;
-  color: #1e1e1e;
-}
-.navbar-default .navbar-nav > li:first-of-type > a {
-  padding: 3px 30px 0 30px;
-  font-size: 17px;
-}
-.navbar-default .navbar-nav > li > a > i {
-    display: inline-block;
-    margin: 0 15px;
-}
-.navbar-default .navbar-nav > li.active > a,
-.navbar-default .navbar-nav > li.active:focus > a,
-.navbar-default .navbar-nav > li.active:hover > a,
-.navbar-default .navbar-nav > li:hover > a,
-.navbar-default .navbar-nav > li:focus > a,
-.navbar-default .navbar-nav > li.active > a:focus,
-.navbar-default .navbar-nav > li.active:focus > a:focus,
-.navbar-default .navbar-nav > li.active:hover > a:focus,
-.navbar-default .navbar-nav > li:hover > a:focus,
-.navbar-default .navbar-nav > li:focus > a:focus {
-    /*background-color: #52b6ec;*/
-    background-color: #ffffff;
-    color: #1e9509;
-}
-#house {
-    height: 635px;
-    width: 100vw;
-    background: url(images/Layer23.png) no-repeat 50% 50%;
-    background-size: cover;    
-    margin: 121px 0 100px 0;        
-}
-#house .box {
-    position: absolute;
-    top: 202px;
-    left: 0;
-    height: 265px;
-    width: 765px;
-    padding: 50px;
-    background: #fff;  
-    opacity: 0.8;  
-}
-#house h1 {
-    font-family: "MyriadPro-Semibold";
-    font-size: 34px;
     color: #1e1e1e;
-    margin: -5px 0 20px 0;
-    text-transform: uppercase;
-    line-height: 42px;
-}
-#house h2 {
     font-family: "MyriadPro-Regular";
-    font-size: 16px;
+    font-size: 14px;   
+    }
+    .infoblock > div{
+    display: inline-block;  
+    margin-top: 21px;
+    }
+    .phones {
+    height: 39px;
+    position: absolute;  
+    top: 0;
+    left: 0;
+    }
+    .icon-phone {
+    font-size: 18px;  
+    position: relative;
+    right: 6px;
+    top: 1px;
+    }
+    .phone_text a {
+    font-size: 20px;  
+    color: #1e1e1e;    
+    }
+    .phones .order_wrap_btn {
+        display: block;
+        position: absolute;   
+        right: 0; 
+        bottom: 0;
+        color: #1e9509;      
+        line-height: 1;
+    }
+    .adress {
+    width: 348px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    }
+    .icon-map-marker {
+    font-size: 19px;
+    position: absolute;
+    top: 4px;
+    right: 302px;
+    }
+    .adress_text1, .adress_text2 {
     color: #2d2d2d;
-    margin: 0;
-    line-height: 24px;
+    }
+    .adress_text1{
+    position: relative;
+    top: 6px;
+    }
+    .adress_text2 {
+    position: relative;
+    top: 2px;
+    }
+/*Меню*/
+    .navbar-default {    
+        border: 0;
+        padding: 0 0 1px 1px;    
+        margin: 0;
+        border-radius: 0;
+        height: 100%;
+        background-color: #ffffff;
+        overflow: hidden;
+    }
+    .navbar-header {
+        height: 100%;
+    }
+    .navbar-default .navbar-brand {    
+        width: 230px;
+        height: 100%;
+        padding: 0;      
+        background: url(images/logo.png) no-repeat 50% 50%;
+        background-size: contain;
+    }
+    .navbar-default .navbar-nav{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 18px;    
+        font-family: "MyriadPro-Regular";
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    .navbar-default .navbar-nav > li > a {
+    padding: 7px 15px 0 15px;
+    height: 27px;
+    font-size: 16px;
+    line-height: 1;
+    color: #1e1e1e;
+    }
+    .navbar-default .navbar-nav > li:first-of-type > a {
+    padding: 3px 30px 0 30px;
+    font-size: 17px;
+    }
+    .navbar-default .navbar-nav > li > a > i {
+        display: inline-block;
+        margin: 0 15px;
+    }
+    .navbar-default .navbar-nav > li.active > a,
+    .navbar-default .navbar-nav > li.active:focus > a,
+    .navbar-default .navbar-nav > li.active:hover > a,
+    .navbar-default .navbar-nav > li:hover > a,
+    .navbar-default .navbar-nav > li:focus > a,
+    .navbar-default .navbar-nav > li.active > a:focus,
+    .navbar-default .navbar-nav > li.active:focus > a:focus,
+    .navbar-default .navbar-nav > li.active:hover > a:focus,
+    .navbar-default .navbar-nav > li:hover > a:focus,
+    .navbar-default .navbar-nav > li:focus > a:focus {
+        /*background-color: #52b6ec;*/
+        background-color: #ffffff;
+        color: #1e9509;
+    }
+section {
+    width: 100vw !important;
 }
-.opacity40 {
-    opacity: 0.4;  
-}
-.opacity70 {
-    opacity: 0.7;  
-}
-#RoundedRectangle1 
-{ 
-	 left: 152px; 
-	 top: 626px; 
-	 position: absolute; 
-	 width: 666px;
-	 height: 197px;
-	 z-index:202;
-} 
+/*Первый слайд*/
+    #house {
+        height: 635px;        
+        background: url(images/Layer23.png) no-repeat 50% 50%;
+        background-size: cover;    
+        margin: 121px 0 215px 0;        
+    }
+    #house .box {
+        position: absolute;
+        top: 202px;
+        left: 0;
+        height: 265px;
+        width: 765px;
+        padding: 50px;
+        background: #fff;  
+        opacity: 0.8;  
+    }
+    #house h1 {
+        font-family: "MyriadPro-Semibold";
+        font-size: 34px;
+        color: #1e1e1e;
+        margin: -8px 0 18px 0;
+        text-transform: uppercase;
+        line-height: 44px;
+    }
+    #house h2 {
+        font-family: "MyriadPro-Regular";
+        font-size: 16px;
+        color: #2d2d2d;
+        margin: 0;
+        line-height: 24px;
+    }
+    .opacity40 {
+        opacity: 0.4;  
+    }
+    .opacity70 {
+        opacity: 0.7;  
+    }
+/*Картинки с тенями*/
+    #RoundedRectangle1 
+    { 
+        left: 152px; 
+        top: 626px; 
+        position: absolute; 
+        width: 666px;
+        height: 197px;
+        z-index:202;
+    } 
 
- #RoundedRectangle2 
-{ 
-	 left: 629px; 
-	 top: 611px; 
-	 position: absolute; 
-	 width: 267px;
-	 height: 173px;
-	 z-index:203;
-} 
+    #RoundedRectangle2 
+    { 
+        left: 629px; 
+        top: 611px; 
+        position: absolute; 
+        width: 267px;
+        height: 173px;
+        z-index:203;
+    } 
 
- #RoundedRectangle3 
-{ 
-	 left: 728px; 
-	 top: 625px; 
-	 position: absolute; 
-	 width: 430px;
-	 height: 187px;
-	 z-index:204;
-} 
+    #RoundedRectangle3 
+    { 
+        left: 728px; 
+        top: 625px; 
+        position: absolute; 
+        width: 430px;
+        height: 187px;
+        z-index:204;
+    } 
 
- #RoundedRectangle4 
-{ 
-	 left: 993px; 
-	 top: 548px; 
-	 position: absolute; 
-	 width: 462px;
-	 height: 208px;
-	 z-index:205;
-} 
+    #RoundedRectangle4 
+    { 
+        left: 993px; 
+        top: 548px; 
+        position: absolute; 
+        width: 462px;
+        height: 208px;
+        z-index:205;
+    } 
 
- #RoundedRectangle5 
-{ 
-	 left: 914px; 
-	 top: 555px; 
-	 position: absolute; 
-	 width: 247px;
-	 height: 216px;
-	 z-index:206;
-} 
+    #RoundedRectangle5 
+    { 
+        left: 914px; 
+        top: 555px; 
+        position: absolute; 
+        width: 247px;
+        height: 216px;
+        z-index:206;
+    } 
 
- #RoundedRectangle1_0 
-{ 
-	 left: 167px; 
-	 top: 630px; 
-	 position: absolute; 
-	 width: 623px;
-	 height: 149px;
-	 z-index:207;
-} 
+    #RoundedRectangle1_0 
+    { 
+        left: 167px; 
+        top: 630px; 
+        position: absolute; 
+        width: 623px;
+        height: 149px;
+        z-index:207;
+    } 
 
- #RoundedRectangle2_0 
-{ 
-	 left: 672px; 
-	 top: 611px; 
-	 position: absolute; 
-	 width: 199px;
-	 height: 154px;
-	 z-index:208;
-} 
+    #RoundedRectangle2_0 
+    { 
+        left: 672px; 
+        top: 611px; 
+        position: absolute; 
+        width: 199px;
+        height: 154px;
+        z-index:208;
+    } 
 
- #RoundedRectangle3_0 
-{ 
-	 left: 765px; 
-	 top: 611px; 
-	 position: absolute; 
-	 width: 364px;
-	 height: 158px;
-	 z-index:209;
-} 
+    #RoundedRectangle3_0 
+    { 
+        left: 765px; 
+        top: 611px; 
+        position: absolute; 
+        width: 364px;
+        height: 158px;
+        z-index:209;
+    } 
 
- #RoundedRectangle4_0 
-{ 
-	 left: 932px; 
-	 top: 558px; 
-	 position: absolute; 
-	 width: 390px;
-	 height: 176px;
-	 z-index:210;
-} 
+    #RoundedRectangle4_0 
+    { 
+        left: 932px; 
+        top: 558px; 
+        position: absolute; 
+        width: 390px;
+        height: 176px;
+        z-index:210;
+    } 
 
- #RoundedRectangle5_0 
-{ 
-	 left: 841px; 
-	 top: 589px; 
-	 position: absolute; 
-	 width: 193px;
-	 height: 168px;
-	 z-index:211;
-} 
+    #RoundedRectangle5_0 
+    { 
+        left: 841px; 
+        top: 589px; 
+        position: absolute; 
+        width: 193px;
+        height: 168px;
+        z-index:211;
+    } 
 
- #Layer25copy 
-{ 
-	 left: 929px; 
-	 top: 205px; 
-	 position: absolute; 
-	 width: 409px;
-	 height: 491px;
-	 z-index:212;
-} 
+    #Layer25copy 
+    { 
+        left: 929px; 
+        top: 205px; 
+        position: absolute; 
+        width: 409px;
+        height: 491px;
+        z-index:212;
+    } 
 
- #Layer24 
-{ 
-	 left: 220px; 
-	 top: 250px; 
-	 position: absolute; 
-	 width: 855px;
-	 height: 499px;
-	 z-index:213;
-} 
-#main-slider {
+    #Layer24 
+    { 
+        left: 220px; 
+        top: 250px; 
+        position: absolute; 
+        width: 855px;
+        height: 499px;
+        z-index:213;
+    } 
+
+    #main-slider {
     background-image: url(images/slider-bg.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -321,7 +328,43 @@ a, a:hover, a:focus {
     background-repeat: no-repeat;
     padding: 200px 0;
     color: #fff;
+    }
+.center {
+    text-align: center;
 }
+/*Слайд про свойства*/    
+    #services {        
+        color: #2d2d2d;
+    }
+    #services .row {
+        margin: 0;
+    }
+    #services .row > div {
+        margin-bottom: 50px;    
+    }
+    #services img {
+        width: 96px;
+        height: 96px;        
+    }
+    #services h4 {
+        font-family: "MyriadPro-Regular";
+        font-size: 20px;
+        line-height: 28px;
+        margin: 26px 0 6px 0;
+    }
+    #services h4 + p{
+        height: 3px;
+        width: 80px;
+        margin: 0 auto 15px auto;
+        background-color: #1e9509;
+        opacity: 0.4;
+    }
+    #services p {
+        font-family: "MyriadPro-Regular";
+        font-size: 16px;
+        line-height: 24px;
+    }
+/*Что-то дальше*/
 #main-slider .item {
     -moz-transition: opacity ease-in-out 500ms;
     -o-transition: opacity ease-in-out 500ms;
@@ -730,24 +773,6 @@ a, a:hover, a:focus {
     border-bottom-color: #52b6ec;
     margin: 0;
 }
-#services .box {
-    padding-bottom: 0;
-}
-#services .row > div {
-    margin-bottom: 50px;
- 
-}
-.center {
-    text-align: center;
-}
-#team-scroller .designation {
-    margin-top: 10px;
-    display: block;
-}
-.member {
-    margin: 0 50px;
-    text-align: center;
-}
 .carousel.scale .left-arrow,
 .carousel.scale .right-arrow {
     top: 30%;
@@ -982,3 +1007,12 @@ textarea#message {
         width: 100%;
         height: 100%;
 }
+    /*
+#team-scroller .designation {
+    margin-top: 10px;
+    display: block;
+}
+.member {
+    margin: 0 50px;
+    text-align: center;
+}*/
