@@ -159,14 +159,12 @@ a, a:hover, a:focus {
     color: #1e9509;
 }
 #house {
-    background-image: url(images/house.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    padding: 400px 0 500px;
-    color: #fff;
-    margin-bottom: 100px;
+    height: 635px;
+    width: 100vw;
+    background: url(images/Layer23.png) no-repeat 50% 50%;
+    background-size: cover;    
+    margin: 121px 0 100px 0;    
+    color: #fff;    
 }
 #main-slider {
     background-image: url(images/slider-bg.jpg);
