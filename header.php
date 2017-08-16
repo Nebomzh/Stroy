@@ -77,6 +77,22 @@
         <h1>Утеплите ваш дом и cэкономьте <br>до 68% на отоплении</h1>
         <h2>Экструзионный пенополистирол или XPS - один из самых популярных утеплителей.<br>Наиболее известен под названиями брендов Пенплэкс и Технониколь.<br>Отлично подходит для утепления фундаментов, балконов и всего, где важно сохранить тепло.</h2>
     </div>
+    <div class="opacity70">
+    <div id="RoundedRectangle1"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle1.png"></div>
+    <div id="RoundedRectangle2"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle2.png"></div>
+    <div id="RoundedRectangle3"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle3.png"></div>
+    <div id="RoundedRectangle4"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle4.png"></div>
+    <div id="RoundedRectangle5"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle5.png"></div>
+    </div>
+    <div class="opacity40">
+    <div id="RoundedRectangle1_0"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle1_0.png"></div>
+    <div id="RoundedRectangle2_0"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle2_0.png"></div>
+    <div id="RoundedRectangle3_0"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle3_0.png"></div>
+    <div id="RoundedRectangle4_0"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle4_0.png"></div>
+    <div id="RoundedRectangle5_0"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle5_0.png"></div>
+    </div>
+    <div id="Layer25copy"><img src="<?=SITE_TEMPLATE_PATH?>/images/Layer25copy.png"></div>
+    <div id="Layer24"><img src="<?=SITE_TEMPLATE_PATH?>/images/Layer24.png"></div>
 </div>
 </section>
 <!-- <?$APPLICATION->IncludeComponent("bitrix:news.list", "slider", Array(
