@@ -39,7 +39,7 @@
                     <span class="phone_wrap">
                         <span class="icon-phone"></span>
                             <span class="phone_text">
-                                <a rel="nofollow" href="tel:+7 (351) 277-77-88">+7 (351) 277-77-88</a>
+                                <?$APPLICATION->IncludeFile(SITE_DIR."include/phone.php", Array(), Array("MODE" => "html", "NAME" => GetMessage("PHONE")));?>
                             </span>
                     </span>
                     <span class="order_wrap_btn">
