@@ -170,6 +170,11 @@ a, a:hover, a:focus {
     }
 section {
     width: 100vw !important;
+    position: relative; /*чтобы якорь цеплялся за секцию*/
+}
+section .anchor {
+    top: -121px; /*смещаем якорь вверх на высоту меню, чтобы при прокрутке секция была ровно ниже меню, а не скрывалась под ним*/
+    position: absolute;/*и вырываем его из потока, чтобы он не сказывался на остальном контенте*/
 }
 /*Первый слайд*/
     #house {
@@ -423,7 +428,7 @@ section {
         background-color: #1e9509;
         opacity: 0.4;
     }
-    #pricing-table > div {
+    #pricing #pricing-table > div {
         padding: 0;
         margin-bottom: 20px;
     }    
@@ -493,7 +498,7 @@ section {
     #pricing #pricing-table > div:last-of-type {
         margin-bottom: 10px;
     }
-    #pricing#pricing-table > div:last-of-type .plan {
+    #pricing #pricing-table > div:last-of-type .plan {
         border: 4px solid #ff7800;
     }
     #pricing #pricing-table > div:last-of-type .plan  li:first-of-type {

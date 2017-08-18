@@ -1,4 +1,5 @@
 <section id="pricing">
+<div id="pricinganchor" class="anchor"></div>
 <div class="container">
 	<div class="box">
 		<div class="center">

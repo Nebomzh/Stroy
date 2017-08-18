@@ -43,7 +43,9 @@
                             </span>
                     </span>
                     <span class="order_wrap_btn">
-                        <span class="callback_btn">Заказать звонок</span>
+                        <?if( \Bitrix\Main\Config\Option::get("aspro.mshop", "SHOW_CALLBACK", "Y") != "N"):?>
+                        <span class="callback_btn"><?=GetMessage("CALLBACK")?></span>
+                        <?endif;?>
                     </span>
                 </div>
                 <div class="adress">
@@ -72,6 +74,7 @@
 </header>
 
 <section id="house" class="col-sm-12">
+<div id="houseanchor" class="anchor"></div>
 <div class="container">
     <div class="box first">
         <h1>Утеплите ваш дом и cэкономьте <br>до 68% на отоплении</h1>
