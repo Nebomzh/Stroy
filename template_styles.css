@@ -179,7 +179,7 @@ section .anchor {
 /*Первый слайд*/
     #house {
         height: 635px;        
-        background: fixed url(images/Layer23.png) no-repeat 0 121px;    
+        background: fixed url(images/Layer23.jpg) no-repeat 0 121px;    
         margin: 121px 0 165px 0;        
     }
     #house .box {
@@ -189,8 +189,7 @@ section .anchor {
         height: 265px;
         width: 765px;
         padding: 50px;
-        background: #ffffff;  
-        opacity: 0.8;  
+        background: rgba(255, 255, 255, 0.8);  
     }
     #house h1 {
         font-family: "MyriadPro-Semibold";
@@ -369,13 +368,13 @@ section .anchor {
         line-height: 24px;
     }
 /* Разделитель с кнопкой перейти */
-    .form-group {        
+    .form-group { 
         height: 225px;
         position: relative;
         margin: 70px 0;
     }    
     .form-group:first-of-type, .form-group:nth-of-type(2) {
-        background: fixed url(images/Layer37.png) repeat-y 50% 121px;        
+        background: fixed url(images/Layer37.jpg) repeat-y 50% 121px;        
     }
     .form-group:first-of-type::before, .form-group:nth-of-type(2)::before {
         content: '';
@@ -396,11 +395,14 @@ section .anchor {
         position: relative;
         height: 63px;
         width: 367px;
-        margin-top: 81px;
         font-family: "MyriadPro-Semibold";
         font-size: 34px;
         line-height: 50px;
         text-transform: uppercase;
+        margin: 35px 0 80px 0;
+    }    
+    .form-group .btn-primary {
+        margin: 80px 0;
     }
 /* Слайд Как выбрать, который кто-то назвал pricing! Pricing, Карл! Какого лешего?! Причём здесь pricing?! */
     #pricing h2 {    
@@ -428,28 +430,44 @@ section .anchor {
         background-color: #1e9509;
         opacity: 0.4;
     }
-    #pricing #pricing-table > div {
+    #pricing-table > div {
         padding: 0;
-        margin-bottom: 20px;
-    }    
-    #pricing .plan {
+        margin-bottom: 20px;    
+    }        
+    .plan {
         background: #f3f3f3;
         list-style: none;    
         padding: 0;  
         margin: 0;         
     }
-    #pricing .plan  li:first-of-type {
-        background: fixed url(images/Layer33.png) repeat-y 50% 121px;        
-        text-align: center;
-        height: 55px;
+    .plan li {
+        padding: 24px 30px;
         font-family: "MyriadPro-Regular";
+        font-size: 20px;
+        line-height: 28px;
+        color: #1e1e1e; 
+        float: left;  
+        width: 50%;
+    }   
+    #pricing .plan li:nth-of-type(2), #pricing .plan li:nth-of-type(3) {
+        font-size: 16px;
+        line-height: 24px;
+        color: #2d2d2d;      
+    } 
+    .plan  li:first-of-type {
+        padding: 0;
         font-size: 20px;
         line-height: 56px;
         color: #ffffff;
-        position: relative;
+        float: none;
         clear: both;
+        width: 100%;
+        background: fixed url(images/Layer33.jpg) repeat-y 50% 121px;        
+        text-align: center;
+        height: 55px;
+        position: relative;
     }
-    #pricing .plan  li:first-of-type::before {
+    .plan  li:first-of-type::before {
         content: '';
         position: absolute;
         height: 100%;
@@ -459,24 +477,16 @@ section .anchor {
         background-color: #1e9509;        
         opacity: 0.9;
     }
-    #pricing .plan  li p {
+    .plan  li p {
         position: relative;
-        margin: 0;
+        margin: 0;        
     }
-    #pricing .plan li:nth-of-type(2), .plan  li:nth-of-type(3) {
-        padding: 24px 30px;
-        font-family: "MyriadPro-Regular";
-        font-size: 16px;
-        line-height: 24px;
-        color: #2d2d2d;      
-        float: left;  
-        width: 50%;
-    }    
-    #pricing i {
+    .plan i {
         float: left;
+        clear: left;
         font-size: 24px;
     }
-    #pricing i + p {
+    .plan i + p {
         float: left;
         width: calc( 100% - 24px );
         padding-left: 10px;
@@ -490,7 +500,7 @@ section .anchor {
     .icon-color3 {        
         color: #ff7800;
     }
-    #pricing ul::after {
+    .plan::after {
         content: '';
         clear: both;
         display: block;
@@ -514,139 +524,70 @@ section .anchor {
         width: 100%;
     }
 
+
+/* Слайдs про пол, балкон и цоколь*/
+    #floor, #balkon, #podval {
+        height: 525px;
+        margin-bottom: 30px;
+    }
+    #podval {
+        height: 605px;
+    }
+    #floor {
+        background: url(images/layer_93.jpg) no-repeat 0 0;
+    }
+    #balkon {
+        background: url(images/layer_71.jpg) no-repeat 0 0;
+    }
+    #podval {
+        background: url(images/Layer32.jpg) no-repeat 0 0;
+    }
+    #floor .box, #balkon .box, #podval .box  {
+        width: 100%;
+        padding: 50px 30px;        
+        background-color: rgba(30, 30, 30, 0.7);
+    }
+    #floor h2, #balkon h2, #podval h2 {
+        font-family: "MyriadPro-Semibold";
+        font-size: 34px;
+        line-height: 42px;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin: -8px 0 14px 0;
+    }
+    #floor p, #balkon p, #podval p {
+        font-family: "MyriadPro-Regular";
+        font-size: 20px;
+        line-height: 28px;
+        color: #ffffff;
+    }    
+    #floor2 .flexcol, #balkon2 .flexcol, #podval2 .flexcol {
+        min-height: 340px;
+    }
+    .flexcol {
+        display: flex;    
+        justify-content: space-around;
+        flex-direction: column;
+        height: 100%;
+    }
+    .videoWrapper {
+        margin-left: -30px;  
+        background-color: #ffffff;      
+    }
+    .videoWrapper iframe {
+        height: 312px;
+        width: 100%;
+    }
+    .videoWrapper p {
+        font-size: 16px;
+        line-height: 22px;
+        padding-left: 20px;
+        margin-top: -4px;
+        padding-bottom: 4px;
+    }   
+
 /*Что-то дальше*/
-#floor .box {
-    background-color: #f9f9f9;
-}
-#floor .plan {
-    background: #fff;
-    list-style: none;
-    margin: 0 0 10px;
-    text-align: center;
-    padding: 0;
-    border-bottom: 1px solid #e1e1e1;
-}
-#floor .plan li {
-    padding: 5px 0;
-    margin: 0 10px;
-    border-bottom: 1px dashed #eee;
-}
-#floor .plan li.plan-name {
-    padding: 5px 0;
-    font-size: 18px;
-    font-weight: 700;
-}
-#floor .plan li.plan-price {
-    color: #666;
-    padding: 15px 0;
-    font-size: 48px;
-}
-#floor .plan li.plan-action {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-bottom: 0;
-}
-#floor .plan.featured {
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);
-}
-#floor .plan.featured .plan-price {
-    color: #fff;
-    background-color: #52b6ec;
-    border-bottom-color: #52b6ec;
-    margin: 0;
-}
-#balkon .box {
-    background-color: #f9f9f9;
-}
-#balkon .plan {
-    background: #fff;
-    list-style: none;
-    margin: 0 0 10px;
-    text-align: center;
-    padding: 0;
-    border-bottom: 1px solid #e1e1e1;
-}
-#balkon .plan li {
-    padding: 5px 0;
-    margin: 0 10px;
-    border-bottom: 1px dashed #eee;
-}
-#balkon .plan li.plan-name {
-    padding: 5px 0;
-    font-size: 18px;
-    font-weight: 700;
-}
-#balkon .plan li.plan-price {
-    color: #666;
-    padding: 15px 0;
-    font-size: 48px;
-}
-#balkon .plan li.plan-action {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-bottom: 0;
-}
-#balkon .plan.featured {
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);
-}
-#balkon .plan.featured .plan-price {
-    color: #fff;
-    background-color: #52b6ec;
-    border-bottom-color: #52b6ec;
-    margin: 0;
-}
-#podval .box {
-    background-color: #f9f9f9;
-}
-#podval .plan {
-    background: #fff;
-    list-style: none;
-    margin: 0 0 10px;
-    text-align: center;
-    padding: 0;
-    border-bottom: 1px solid #e1e1e1;
-}
-#podval .plan li {
-    padding: 5px 0;
-    margin: 0 10px;
-    border-bottom: 1px dashed #eee;
-}
-#podval .plan li.plan-name {
-    padding: 5px 0;
-    font-size: 18px;
-    font-weight: 700;
-}
-#podval .plan li.plan-price {
-    color: #666;
-    padding: 15px 0;
-    font-size: 48px;
-}
-#podval .plan li.plan-action {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-bottom: 0;
-}
-#podval .plan.featured {
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);
-}
-#podval .plan.featured .plan-price {
-    color: #fff;
-    background-color: #52b6ec;
-    border-bottom-color: #52b6ec;
-    margin: 0;
-}
+
 .carousel.scale .left-arrow,
 .carousel.scale .right-arrow {
     top: 30%;
@@ -819,17 +760,3 @@ textarea#message {
     }
 }
 
-.videoWrapper {
-        position: relative;
-        padding-bottom: 56.25%;
-        padding-top: 25px;
-        height: 0;
-}
-.videoWrapper iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-}
-    
