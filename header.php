@@ -78,7 +78,7 @@
 <div class="container">
     <div class="box first">
         <h1>Утеплите ваш дом и cэкономьте <br>до 68% на отоплении</h1>
-        <h2>Экструзионный пенополистирол или XPS - один из самых популярных утеплителей.<br>Наиболее известен под названиями брендов Пенплэкс и Технониколь.<br>Отлично подходит для утепления фундаментов, балконов и всего, где важно сохранить тепло.</h2>
+        <h3>Экструзионный пенополистирол или XPS - один из самых популярных утеплителей.<br>Наиболее известен под названиями брендов Пенплэкс и Технониколь.<br>Отлично подходит для утепления фундаментов, балконов и всего, где важно сохранить тепло.</h3>
     </div>
     <div class="opacity70">
     <div id="RoundedRectangle1"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle1.png"></div>
@@ -92,7 +92,7 @@
     <div id="RoundedRectangle2_0"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle2_0.png"></div>
     <div id="RoundedRectangle3_0"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle3_0.png"></div>
     <div id="RoundedRectangle4_0"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle4_0.png"></div>
-    <div id="RoundedRectangle5_0"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle5_0.png"></div>
+    <div id="RoundedRectangle5_0"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle5_0.png"></div>    
     </div>
     <div id="Layer25copy"><img src="<?=SITE_TEMPLATE_PATH?>/images/Layer25copy.png"></div>
     <div id="Layer24"><img src="<?=SITE_TEMPLATE_PATH?>/images/Layer24.png"></div>
@@ -199,6 +199,21 @@
         </div>
     </div>
 </section> -->
+<section id="glue">
+    <div class="container">
+        <div id="Ellipse1"><img src="<?=SITE_TEMPLATE_PATH?>/images/Ellipse1.png"></div>
+        <div id="Layer26"><img src="<?=SITE_TEMPLATE_PATH?>/images/Layer26.png"></div>
+        <div class="flexcol">
+            <div class="box">
+                <h2>Используйте клей-пену для XPS</h2>
+                <p>Удобно, быстро, выгодно, надёжно!<br><br>Закрепить без дюбелей на любой поверхности.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
 <section>
 <div class="container">
 <div class="box">

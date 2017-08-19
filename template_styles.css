@@ -4,6 +4,14 @@ body {
 a, a:hover, a:focus {
   text-decoration: none;
 }
+h2 {
+    font-family: "MyriadPro-Semibold";
+    font-size: 34px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: -8px 0 14px 0;
+}
 .btn-lg {
   color: #ffffff;
   background-color: #1e9509;  
@@ -199,7 +207,7 @@ section .anchor {
         text-transform: uppercase;
         line-height: 44px;
     }
-    #house h2 {
+    #house h3 {
         font-family: "MyriadPro-Regular";
         font-size: 16px;
         color: #2d2d2d;
@@ -355,7 +363,7 @@ section .anchor {
         line-height: 28px;
         margin: 26px 0 6px 0;
     }
-    #services h4 + p{
+    #services h4 + p {
         height: 3px;
         width: 80px;
         margin: 0 auto 15px auto;
@@ -405,12 +413,8 @@ section .anchor {
         margin: 80px 0;
     }
 /* Слайд Как выбрать, который кто-то назвал pricing! Pricing, Карл! Какого лешего?! Причём здесь pricing?! */
-    #pricing h2 {    
-        font-family: "MyriadPro-Semibold";
-        font-size: 34px;
-        line-height: 42px;
+    #pricing h2 {            
         color: #1e1e1e;        
-        text-transform: uppercase; 
         margin-top: 0px;    
         margin-bottom: 20px;   
     }
@@ -546,15 +550,7 @@ section .anchor {
         width: 100%;
         padding: 50px 30px;        
         background-color: rgba(30, 30, 30, 0.7);
-    }
-    #floor h2, #balkon h2, #podval h2 {
-        font-family: "MyriadPro-Semibold";
-        font-size: 34px;
-        line-height: 42px;
-        color: #ffffff;
-        text-transform: uppercase;
-        margin: -8px 0 14px 0;
-    }
+    }    
     #floor p, #balkon p, #podval p {
         font-family: "MyriadPro-Regular";
         font-size: 20px;
@@ -585,6 +581,40 @@ section .anchor {
         margin-top: -4px;
         padding-bottom: 4px;
     }   
+
+/* Клей */
+    #glue {
+        height: 256px;
+        background-color: #1e9509;
+        margin-bottom: 140px;
+    }
+    #Ellipse1 
+    { 
+        left: 4px; 
+        top: 261px; 
+        position: absolute; 
+        width: 207px;
+        height: 77px;
+        z-index:101;
+    }
+    #Layer26 
+    { 
+        left: 61px;
+        top: -76px;
+        position: absolute; 
+        width: 97px;
+        height: 384px;
+        z-index:102;
+    } 
+    #glue .box {
+        margin-left: 244px;
+    }
+    #glue p {
+        font-family: "MyriadPro-Regular";
+        font-size: 20px;
+        line-height: 18px;
+        color: #ffffff;
+    }
 
 /*Что-то дальше*/
 
