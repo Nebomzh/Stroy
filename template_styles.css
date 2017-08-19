@@ -615,6 +615,83 @@ section .anchor {
         line-height: 18px;
         color: #ffffff;
     }
+/* Последняя секция */
+    #last {
+        font-family: "MyriadPro-Regular";
+        font-size: 24px;
+        color: #1e1e1e;
+        line-height: 32px;
+    }
+
+    #last h2 {
+        color: #ff7800;
+        margin-top: -3px;
+        margin-bottom: 42px;
+    }
+    #last .lead {
+        margin: 0 0 30px 0;
+    }
+    #last .phone_text a {
+    font-family: "MyriadPro-Bold";
+    font-size: 24px;  
+    color: #1e9509;    
+    }
+    #last .lead::after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 500px;
+        margin: 20px auto 0px auto;
+        background-color: #1e9509;
+        opacity: 0.4;
+    }
+    #last .textbox {
+        width: 40%;
+        padding: 20px 30px;
+    }
+    #last .textbox.left {
+        float: left;
+    }
+    #last .textbox.right {
+        float: right;
+    }
+    #last .line {
+        background-color: #a5d59d;
+        height: 3px;
+        margin-top: 44px;
+        margin-bottom: -46px;
+    }
+    .iconround {
+        height: 92px;
+        width: 92px;
+        border: 3px solid #1e9509;
+        border-radius: 50%;
+        background-color: #ffffff;
+        float: left;
+        margin-left: calc(20% - 92px);
+    }
+    .iconround:first-of-type {
+        margin-left: calc(20% - 46px);        
+    }
+    #prefoot {
+        height: 106px;
+        background-color: #f3f3f3;
+        margin-top: 50px;
+        border-bottom: 1px solid #a1a1a1;
+        font-family: "MyriadPro-Regular";
+        font-size: 20px;
+        line-height: 28px;
+        color: #1e1e1e;
+    }
+    #prefoot .textbox:first-of-type {
+        width: 455px;
+        padding: 25px 0;        
+    }
+    #prefoot .textbox:nth-of-type(2) {
+        width: 715px;
+        padding: 25px 0 0 40px;
+    }
+    
 
 /*Что-то дальше*/
 
@@ -674,7 +751,7 @@ section .anchor {
 .icon-social.icon-facebook:hover {
     background: #789bde;
 }
-.icon-social.icon-twitter {
+. -social.icon-twitter {
     background: #5bceff;
 }
 .icon-social.icon-twitter:hover {

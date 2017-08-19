@@ -214,19 +214,62 @@
 
     
 
-<section>
-<div class="container">
-<div class="box">
-<div class="center">
-<h2>Купи XPS по самой выгодной цене</h2>
-<div class="plan"><p class="lead">
-Мы предлагаем приобрести экструдированный пенополистирол по лучшей цене на нашем сайте, в офисе или по телефону +7 (351) 277-77-88<br><br>
-Мы предоставляем гарантии от дилера и лучшие условия для каждого типа клиентов.<br><br>
-У нас вы найдёте широкий ассортимент строительных материалов, в том числе экструдированный пенополистерол. У нас действуют выгодные условия доставки, разгрузки и подъема материалов на ваш объект. Мы доставляем товар в день заказа!<br><br>
-Вы можете заказать звонок и наши специалисты помогут определиться с выбором.<br><br>
-Вы можете купить экструзионный пенполистирол в нашем офисе Челябинск, Свердловский тракт 5 корпус 9 (Строительный центр «Прораб»)</p>
-</div>
-</div>
-</div>
-</div>
+<section id="last">
+    <div class="center">
+        <div class="container">
+            <h2>Купи XPS по самой выгодной цене</h2>
+            <p class="lead">
+                Мы предлагаем приобрести экструдированный пенополистирол по лучшей цене<br>на нашем сайте, в офисе или по телефону 
+                <span class="phone_text">
+                    <?$APPLICATION->IncludeFile(SITE_DIR."include/phone.php", Array(), Array("MODE" => "html", "NAME" => GetMessage("PHONE")));?>
+                    </span>
+            </p>
+        </div>
+        <div class="container">
+            <div class="textbox left">
+                Мы предоставляем гарантии от дилера и лучшие условия для <br>каждого типа клиентов.
+            </div>
+            <div class="textbox left">
+            У нас действуют выгодные условия доставки, разгрузки и подъема материалов на ваш объект. 
+            </div>
+        </div>
+        
+        <div class="line">
+        </div>                
+        
+        <div class="container">
+            <div>
+                <div class="iconround">
+                    <img src="<?=SITE_TEMPLATE_PATH?>/images/Layer45.png">
+                </div>
+                <div class="iconround">
+                    <img src="<?=SITE_TEMPLATE_PATH?>/images/Layer46.png">
+                </div>
+                <div class="iconround">
+                    <img src="<?=SITE_TEMPLATE_PATH?>/images/Layer48.png">
+                </div>
+                <div class="iconround">
+                    <img src="<?=SITE_TEMPLATE_PATH?>/images/Layer47.png">
+                </div>
+            </div>
+        </div>
+        <div class="container">            
+                <div class="textbox right">
+                    Мы доставляем товар в день заказа!
+                </div>
+                <div class="textbox right">
+                У нас вы найдёте широкий ассортимент строительных материалов, в том числе экструдированный пенополистерол.
+                </div>            
+        </div>
+    </div>
+    <div id="prefoot">
+        <div class="container">            
+            <div class="textbox left">
+                Вы можете заказать звонок и наши специалисты помогут определиться с выбором.
+            </div>
+            <div class="textbox left">                
+                Вы можете купить экструзионный пенполистирол в нашем офисе Челябинск, Свердловский тракт 5 корпус 9 (Строительный центр «Прораб»)
+            </div>
+        </div>            
+    </div>
 </section>
