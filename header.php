@@ -30,7 +30,7 @@
 <body data-spy="scroll" data-target="#navbar" data-offset="0">
 <header id="header" role="banner">
     <div class="container">    
-        <div id="navbar" class="navbar navbar-default"><div></div>
+        <div id="navbar" class="navbar navbar-default">
             <div class="navbar-header">
 				<a class="navbar-brand" href="<?=SITE_DIR?>"></a>                
             </div>
