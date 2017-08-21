@@ -3,6 +3,7 @@
 <div class="container">
 	<div class="box first">
 		<div class="row">
+		<div class="flexrow">
 			 <?$APPLICATION->IncludeComponent(
 	"bitrix:news.list",
 	"services",
@@ -61,6 +62,7 @@
 		"SORT_ORDER2" => "DESC"
 	)
 );?>
+		</div>
 		</div>
 	</div>
 </div>

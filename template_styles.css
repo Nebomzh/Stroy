@@ -349,8 +349,18 @@ section .anchor {
 /*Слайд про свойства*/    
     #services {        
         color: #2d2d2d;
+    }    
+    .flexrow {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
-    #services .row > div {
+    .element {
+        position: relative;
+        width: 292px;
+        padding-left: 15px;
+        padding-right: 15px;
         margin-top: 50px;
     }
     #services img {
@@ -751,7 +761,7 @@ section .anchor {
 .icon-social.icon-facebook:hover {
     background: #789bde;
 }
-. -social.icon-twitter {
+.icon-social.icon-twitter {
     background: #5bceff;
 }
 .icon-social.icon-twitter:hover {
