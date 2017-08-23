@@ -448,7 +448,7 @@ section .anchor {
     .btn-primary { 
         position: relative;
         height: 63px;
-        width: 367px;
+        width: 364px;
         font-family: "MyriadPro-Semibold";
         font-size: 34px;
         line-height: 50px;
@@ -458,6 +458,22 @@ section .anchor {
     .form-group .btn-primary {
         margin: 80px 0;
     }
+    @media (min-width: 768px) {
+        .btn-primary.callback_btn {
+            margin-left: 40px;
+        }
+    }
+     @media (max-width: 767px) {
+        .btn-primary:first-child {
+            margin-bottom: 0;
+        }
+        .form-group .btn-primary {
+            margin: 33px 0;
+        }
+        .form-group .btn-primary.callback_btn {
+            margin: 0;
+        }
+    } 
 /* Слайд Как выбрать, который кто-то назвал pricing! Pricing, Карл! Какого лешего?! Причём здесь pricing?! */
     #pricing h2 {            
         color: #1e1e1e;        

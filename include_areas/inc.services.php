@@ -69,4 +69,5 @@
  </section>
 <div class="form-group" style="text-align: center">
  <a href="https://www.stroyxpress.ru/catalog/uteplitel/ekstrudirovannyy_penopolistirol/" class="btn btn-primary btn-lg">Перейти в каталог</a>
+ <span class="btn btn-primary btn-lg callback_btn">Заказать звонок</span>
 </div>

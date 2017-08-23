@@ -44,9 +44,10 @@
                                 </span>
                         </span>
                         <span class="order_wrap_btn">
-                            <?if( \Bitrix\Main\Config\Option::get("aspro.mshop", "SHOW_CALLBACK", "Y") != "N"):?>
+                            <!-- <?if( \Bitrix\Main\Config\Option::get("aspro.mshop", "SHOW_CALLBACK", "Y") != "N"):?>
                             <span class="callback_btn"><?=GetMessage("CALLBACK")?></span>
-                            <?endif;?>
+                            <?endif;?> -->
+                            <span class="callback_btn">Заказать звонок</span>
                         </span>
                     </div>
                     <div class="adress">

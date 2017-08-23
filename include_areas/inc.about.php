@@ -44,6 +44,7 @@
 </section>
 <div style="text-align: center">
 	<a href="https://www.stroyxpress.ru/catalog/uteplitel/ekstrudirovannyy_penopolistirol/" class="btn btn-primary btn-lg">Перейти в каталог</a>
+	<span class="btn btn-primary btn-lg callback_btn">Заказать звонок</span>
 </div>
 <section id="balkon">
 <div id="balkonanchor" class="anchor"></div>
@@ -91,6 +92,7 @@
 </section>
 <div style="text-align: center">
 	<a href="https://www.stroyxpress.ru/catalog/uteplitel/ekstrudirovannyy_penopolistirol/" class="btn btn-primary btn-lg">Перейти в каталог</a>
+	<span class="btn btn-primary btn-lg callback_btn">Заказать звонок</span>
 </div>
 <section id="podval">
 <div id="podvalanchor" class="anchor"></div>
@@ -137,4 +139,5 @@
 </section>
 <div style="text-align: center">
 	<a href="https://www.stroyxpress.ru/catalog/uteplitel/ekstrudirovannyy_penopolistirol/" class="btn btn-primary btn-lg">Перейти в каталог</a>
+	<span class="btn btn-primary btn-lg callback_btn">Заказать звонок</span>
 </div>
