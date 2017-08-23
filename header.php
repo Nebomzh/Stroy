@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="windows-1251">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
     <link rel="shortcut icon" href="<?=SITE_TEMPLATE_PATH?>/images/ico/favicon.ico">
     <title><?$APPLICATION->ShowTitle();?></title>
@@ -34,41 +34,42 @@
             <div class="navbar-header">
 				<a class="navbar-brand" href="<?=SITE_DIR?>"></a>                
             </div>
-            <div class="infoblock">
-                <div class="phones">
-                    <span class="phone_wrap">
-                        <span class="icon-phone"></span>
-                            <span class="phone_text">
-                                <?$APPLICATION->IncludeFile(SITE_DIR."include/phone.php", Array(), Array("MODE" => "html", "NAME" => GetMessage("PHONE")));?>
-                            </span>
-                    </span>
-                    <span class="order_wrap_btn">
-                        <?if( \Bitrix\Main\Config\Option::get("aspro.mshop", "SHOW_CALLBACK", "Y") != "N"):?>
-                        <span class="callback_btn"><?=GetMessage("CALLBACK")?></span>
-                        <?endif;?>
-                    </span>
+            <div class="navbar-right">
+                <div class="infoblock">
+                    <div class="phones">
+                        <span class="phone_wrap">
+                            <span class="icon-phone"></span>
+                                <span class="phone_text">
+                                    <?$APPLICATION->IncludeFile(SITE_DIR."include/phone.php", Array(), Array("MODE" => "html", "NAME" => GetMessage("PHONE")));?>
+                                </span>
+                        </span>
+                        <span class="order_wrap_btn">
+                            <?if( \Bitrix\Main\Config\Option::get("aspro.mshop", "SHOW_CALLBACK", "Y") != "N"):?>
+                            <span class="callback_btn"><?=GetMessage("CALLBACK")?></span>
+                            <?endif;?>
+                        </span>
+                    </div>
+                    <div class="adress">
+                        <span class="icon-map-marker"></span>
+                        <span class="adress_text1">Челябинск, Свердловский тракт, 5, корпус 9<br></span>
+                        <span class="adress_text2">Строительный центр «Прораб», цокольный этаж</span>
+                    </div>
                 </div>
-                <div class="adress">
-                    <span class="icon-map-marker"></span>
-                    <span class="adress_text1">Челябинск, Свердловский тракт, 5, корпус 9<br></span>
-                    <span class="adress_text2">Строительный центр «Прораб», цокольный этаж</span>
-                </div>
-            </div>
-                <?$APPLICATION->IncludeComponent("bitrix:menu", "top", Array(
-                        "ROOT_MENU_TYPE" => "top",
-                        "MENU_CACHE_TYPE" => "A",
-                        "MENU_CACHE_TIME" => "36000000",
-                        "MENU_CACHE_USE_GROUPS" => "Y",
-                        "MENU_CACHE_GET_VARS" => "",
-                        "MAX_LEVEL" => "1",
-                        "CHILD_MENU_TYPE" => "left",
-                        "USE_EXT" => "N",
-                        "DELAY" => "N",
-                        "ALLOW_MULTI_SELECT" => "N",
-                    ),
-                    false
-                );?>
-            
+                    <?$APPLICATION->IncludeComponent("bitrix:menu", "top", Array(
+                            "ROOT_MENU_TYPE" => "top",
+                            "MENU_CACHE_TYPE" => "A",
+                            "MENU_CACHE_TIME" => "36000000",
+                            "MENU_CACHE_USE_GROUPS" => "Y",
+                            "MENU_CACHE_GET_VARS" => "",
+                            "MAX_LEVEL" => "1",
+                            "CHILD_MENU_TYPE" => "left",
+                            "USE_EXT" => "N",
+                            "DELAY" => "N",
+                            "ALLOW_MULTI_SELECT" => "N",
+                        ),
+                        false
+                    );?>
+            </div>    
         </div>
     </div>
 </header>
@@ -76,26 +77,29 @@
 <section id="house" class="col-sm-12">
 <div id="houseanchor" class="anchor"></div>
 <div class="container">
-    <div class="box first">
-        <h1>Утеплите ваш дом и cэкономьте <br>до 68% на отоплении</h1>
-        <h3>Экструзионный пенополистирол или XPS - один из самых популярных утеплителей.<br>Наиболее известен под названиями брендов Пеноплекс и Технониколь.<br>Отлично подходит для утепления фундаментов, балконов и всего, где важно сохранить тепло.</h3>
+	<div class="flexcol">
+        <div class="box first">
+            <h1>Утеплите ваш дом и cэкономьте <br>до 68% на отоплении</h1>
+            <h3>Экструзионный пенополистирол или XPS - один из самых популярных утеплителей.<br>Наиболее известен под названиями брендов Пеноплекс и Технониколь.<br>Отлично подходит для утепления фундаментов, балконов и всего, где важно сохранить тепло.</h3>
+        </div>
     </div>
     <div class="opacity70">
-    <div id="RoundedRectangle1"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle1.png"></div>
-    <div id="RoundedRectangle2"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle2.png"></div>
-    <div id="RoundedRectangle3"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle3.png"></div>
-    <div id="RoundedRectangle4"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle4.png"></div>
-    <div id="RoundedRectangle5"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle5.png"></div>
+    <div id="RoundedRectangle1" class="hide768"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle1.png"></div>
+    <div id="RoundedRectangle2" class="hide992"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle2.png"></div>
+    <div id="RoundedRectangle3" class="hide992"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle3.png"></div>
+    <div id="RoundedRectangle4" class="hide1200"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle4.png"></div>
+    <div id="RoundedRectangle5" class="hide1200"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle5.png"></div>
     </div>
     <div class="opacity40">
-    <div id="RoundedRectangle1_0"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle1_0.png"></div>
-    <div id="RoundedRectangle2_0"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle2_0.png"></div>
-    <div id="RoundedRectangle3_0"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle3_0.png"></div>
-    <div id="RoundedRectangle4_0"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle4_0.png"></div>
-    <div id="RoundedRectangle5_0"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle5_0.png"></div>    
+    <div id="RoundedRectangle1_0" class="hide768"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle1_0.png"></div>
+    <div id="RoundedRectangle2_0" class="hide992"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle2_0.png"></div>
+    <div id="RoundedRectangle3_0" class="hide992"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle3_0.png"></div>
+    <div id="RoundedRectangle4_0" class="hide1200"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle4_0.png"></div>
+    <div id="RoundedRectangle5_0" class="hide1200"><img src="<?=SITE_TEMPLATE_PATH?>/images/RoundedRectangle5_0.png"></div>    
     </div>
-    <div id="Layer25copy"><img src="<?=SITE_TEMPLATE_PATH?>/images/Layer25copy.png"></div>
-    <div id="Layer24"><img src="<?=SITE_TEMPLATE_PATH?>/images/Layer24.png"></div>
+    <div id="Layer25copy" class="hide1200"><img src="<?=SITE_TEMPLATE_PATH?>/images/Layer25copy.png"></div>
+    <div id="Layer24a" class="hide768"><img src="<?=SITE_TEMPLATE_PATH?>/images/Layer24a.png"></div>
+    <div id="Layer24b" class="hide992"><img src="<?=SITE_TEMPLATE_PATH?>/images/Layer24b.png"></div>
 </div>
 </section>
 <!-- <?$APPLICATION->IncludeComponent("bitrix:news.list", "slider", Array(

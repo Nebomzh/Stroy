@@ -1,5 +1,5 @@
 body {
-    background: #ffffff;    
+    background: #ffffff;  
 }
 a, a:hover, a:focus {
   text-decoration: none;
@@ -55,39 +55,42 @@ h2 {
     height: 100%;
     position: relative;
 }
+.navbar-header {
+    float: left;
+}
+.navbar-right {
+    display: inline-block;
+    height: 100%;
+    width: calc(100% - 230px);
+    position: relative;
+}
 /*Контакты*/
+    .infoblock {  
+        color: #1e1e1e;
+        font-family: "MyriadPro-Regular";
+        font-size: 14px;   
+    }
     #header .infoblock {  
-    height: 76px;
-    width: 525px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: #1e1e1e;
-    font-family: "MyriadPro-Regular";
-    font-size: 14px;   
+    height: 100%;
+    width: 100%;
+    padding-top: 21px;
+    text-align: right;
     }
     #header .infoblock > div{
     display: inline-block;  
-    margin-top: 21px;
     }
     #header .phones {
     height: 39px;
-    position: absolute;  
-    top: 0;
-    left: 0;
+    position: relative;      
     }
-    #header .icon-phone {
-    font-size: 18px;  
-    position: relative;
-    right: 6px;
-    top: 1px;
+    .icon-phone {
+    font-size: 18px;      
     }
-    #header .phone_text a {
+    .phone_text a {
     font-size: 20px;  
     color: #1e1e1e;    
     }
     #header .phones .order_wrap_btn {
-        display: block;
         position: absolute;   
         right: 0; 
         bottom: 0;
@@ -96,27 +99,46 @@ h2 {
     }
     #header .adress {
     width: 348px;
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: relative;    
     text-align: right;
     }
-    #header .icon-map-marker {
+    .icon-map-marker {
     font-size: 19px;
     position: absolute;
-    top: 4px;
-    right: 302px;
+    top: 4px; 
     }
-    #header .adress_text1, .adress_text2 {
+    #header .icon-map-marker {
+        right: 302px;   
+    }
+    .adress_text1, .adress_text2 {
     color: #2d2d2d;
-    }
-    #header .adress_text1{
+    margin-left: 20px; 
     position: relative;
+    }
+    .adress_text1{
     top: 6px;
     }
-    #header .adress_text2 {
-    position: relative;
+    .adress_text2 {
     top: 2px;
+    }
+    @media (min-width: 992px) {
+        #header .phones {
+            position: absolute;
+            top: 21px;
+            right: 348px;
+        }
+    }
+    @media (max-width: 991px) {
+        #header .phones {
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 10px;
+            right: 96px;
+        }
+        #header .adress {
+            position: absolute;
+            right: 0;
+        }
     }
 /*Меню*/
     .navbar-default {    
@@ -141,25 +163,21 @@ h2 {
         position: absolute;
         right: 0;
         bottom: 0;
-        margin-bottom: 18px;    
+        margin: 0 0 18px 0;    
         font-family: "MyriadPro-Regular";
         font-size: 16px;
         text-transform: uppercase;
     }
     .navbar-default .navbar-nav > li > a {
-    padding: 7px 15px 0 15px;
+    padding: 7px 0.78125vw 0 0.78125vw;
     height: 27px;
     font-size: 16px;
     line-height: 1;
     color: #1e1e1e;
     }
     .navbar-default .navbar-nav > li:first-of-type > a {
-    padding: 3px 30px 0 30px;
+    padding: 3px 2.34375vw 0 2.34375vw;
     font-size: 17px;
-    }
-    .navbar-default .navbar-nav > li > a > i {
-        display: inline-block;
-        margin: 0 15px;
     }
     .navbar-default .navbar-nav > li.active > a,
     .navbar-default .navbar-nav > li.active:focus > a,
@@ -175,6 +193,9 @@ h2 {
         background-color: #ffffff;
         color: #1e9509;
     }
+    @media (max-width: 991px) {
+        .navbar-default .navbar-nav > li {display: none;}
+    }
 section {
     width: 100% !important;
     position: relative; /*чтобы якорь цеплялся за секцию*/
@@ -185,17 +206,15 @@ section .anchor {
 }
 /*Первый слайд*/
     #house {
-        height: 635px;        
         background: fixed url(images/Layer23.jpg) no-repeat 0 121px;    
         margin: 121px 0 165px 0;        
     }
+    #house .flexcol {
+        min-height: 635px;
+    }
     #house .box {
-        position: absolute;
-        top: 202px;
-        left: 0;
-        height: 265px;
-        width: 765px;
-        padding: 50px;
+        max-width: 765px;
+        padding: 2.6041vw;
         background: rgba(255, 255, 255, 0.8);  
     }
     #house h1 {
@@ -329,16 +348,34 @@ section .anchor {
         height: 491px;
         z-index:212;
     } 
-
-    #Layer24 
+    #Layer24a
     { 
         left: 220px; 
+        top: 499px; 
+        position: absolute; 
+        width: 517px;
+        height: 250px;
+        z-index:213;
+    } 
+    #Layer24b
+    { 
+        left: 718px; 
         top: 250px; 
         position: absolute; 
-        width: 855px;
+        width: 357px;
         height: 499px;
         z-index:213;
     } 
+    @media (max-width: 1199px) {
+        .hide1200 {display: none;}
+    }
+    @media (max-width: 991px) {
+        .hide992 {display: none;}
+    }
+    @media (max-width: 767px) {
+        .hide768 {display: none;}
+        #house {margin-bottom: 0;}
+    }
 .center {
     text-align: center;
 }
@@ -501,7 +538,7 @@ section .anchor {
     }
     .plan i + p {
         float: left;
-        width: calc( 100% - 24px );
+        width: calc( 100% - 25px );
         padding-left: 10px;
     }
     .icon-color1 {        
@@ -540,11 +577,13 @@ section .anchor {
 
 /* Слайдs про пол, балкон и цоколь*/
     #floor, #balkon, #podval {
-        height: 525px;
         margin-bottom: 30px;
     }
-    #podval {
-        height: 605px;
+    #floor .flexcol , #balkon .flexcol {
+        min-height: 525px;
+    }
+    #podval .flexcol {
+        min-height: 605px;
     }
     #floor {
         background: url(images/layer_93.jpg) no-repeat 0 0;
@@ -557,7 +596,7 @@ section .anchor {
     }
     #floor .box, #balkon .box, #podval .box  {
         width: 100%;
-        padding: 50px 30px;        
+        padding: 2.6042vw 1.5625vw;        
         background-color: rgba(30, 30, 30, 0.7);
     }    
     #floor p, #balkon p, #podval p {
@@ -592,14 +631,14 @@ section .anchor {
     }   
 
 /* Клей */
-    #glue {
-        height: 256px;
+    #glue {     
+        margin-top: 20px;   
         background-color: #1e9509;
         margin-bottom: 140px;
     }
     #Ellipse1 
     { 
-        left: 4px; 
+        left: calc(2.96875vw - 57px);
         top: 261px; 
         position: absolute; 
         width: 207px;
@@ -608,15 +647,18 @@ section .anchor {
     }
     #Layer26 
     { 
-        left: 61px;
+        left: 2.96875vw;
         top: -76px;
         position: absolute; 
         width: 97px;
         height: 384px;
         z-index:102;
     } 
+    #glue .flexcol {
+        min-height: 256px;
+    }
     #glue .box {
-        margin-left: 244px;
+        margin-left: calc(97px + 5.9375vw);
     }
     #glue p {
         font-family: "MyriadPro-Regular";
@@ -684,7 +726,7 @@ section .anchor {
         margin-left: calc(20% - 46px);        
     }
     #prefoot {
-        height: 106px;
+        min-height: 106px;
         background-color: #f3f3f3;
         margin-top: 50px;
         border-bottom: 1px solid #a1a1a1;
@@ -694,11 +736,11 @@ section .anchor {
         color: #1e1e1e;
     }
     #prefoot .textbox:first-of-type {
-        width: 455px;
+        width: 40%;
         padding: 25px 0;        
     }
     #prefoot .textbox:nth-of-type(2) {
-        width: 715px;
+        width: 60%;
         padding: 25px 0 0 40px;
     }
     
@@ -709,23 +751,11 @@ section .anchor {
         flex-direction: row;
         flex-wrap: wrap;
     }
-    footer .infoblock {  
-    color: #1e1e1e;
-    font-family: "MyriadPro-Regular";
-    font-size: 14px;   
-    }    
     footer .phones {
     height: 39px;
     position: relative;  
     margin-bottom: 12px;
-    }
-    footer .icon-phone {
-    font-size: 18px;      
-    }
-    footer .phone_text a {
-    font-size: 20px;  
-    color: #1e1e1e;    
-    }
+    }    
     footer .phones .order_wrap_btn {
         position: absolute;   
         left: 0; 
@@ -738,26 +768,8 @@ section .anchor {
     width: 348px;
     position: relative;
     margin-bottom: 12px;
-    }
-    footer .icon-map-marker {
-    font-size: 19px;
-    position: absolute;
-    top: 4px;
-    }
-    footer .adress_text1, footer .adress_text2 {
-    color: #2d2d2d;
-    margin-left: 20px; 
-    position: relative;
-    }
-    footer .adress_text1{
-    position: relative;
-    top: 6px;
-    }
-    footer .adress_text2 {
-    top: 8px;    
-    }
-
-        
+    }    
+            
     /*pay icons*/
     .pay_system_icons {
         margin-top: 14px;
