@@ -210,12 +210,13 @@ section .anchor {
         margin: 121px 0 165px 0;        
     }
     #house .flexcol {
-        min-height: 635px;
+        min-height: 525px; /*до правки заказчиком должна была быть 635*/
     }
     #house .box {
         max-width: 765px;
         padding: 2.6041vw;
         background: rgba(255, 255, 255, 0.8);  
+        margin-bottom: 40px; /*костыль, чтобы блок был выше картинок*/
     }
     #house h1 {
         font-family: "MyriadPro-Semibold";
@@ -242,7 +243,7 @@ section .anchor {
     #RoundedRectangle1 
     { 
         left: 152px; 
-        top: 626px; 
+        top: 516px; 
         position: absolute; 
         width: 666px;
         height: 197px;
@@ -252,7 +253,7 @@ section .anchor {
     #RoundedRectangle2 
     { 
         left: 629px; 
-        top: 611px; 
+        top: 501px; 
         position: absolute; 
         width: 267px;
         height: 173px;
@@ -262,7 +263,7 @@ section .anchor {
     #RoundedRectangle3 
     { 
         left: 728px; 
-        top: 625px; 
+        top: 515px; 
         position: absolute; 
         width: 430px;
         height: 187px;
@@ -272,7 +273,7 @@ section .anchor {
     #RoundedRectangle4 
     { 
         left: 993px; 
-        top: 548px; 
+        top: 438px; 
         position: absolute; 
         width: 462px;
         height: 208px;
@@ -282,7 +283,7 @@ section .anchor {
     #RoundedRectangle5 
     { 
         left: 914px; 
-        top: 555px; 
+        top: 445px; 
         position: absolute; 
         width: 247px;
         height: 216px;
@@ -292,7 +293,7 @@ section .anchor {
     #RoundedRectangle1_0 
     { 
         left: 167px; 
-        top: 630px; 
+        top: 520px; 
         position: absolute; 
         width: 623px;
         height: 149px;
@@ -302,7 +303,7 @@ section .anchor {
     #RoundedRectangle2_0 
     { 
         left: 672px; 
-        top: 611px; 
+        top: 501px; 
         position: absolute; 
         width: 199px;
         height: 154px;
@@ -312,7 +313,7 @@ section .anchor {
     #RoundedRectangle3_0 
     { 
         left: 765px; 
-        top: 611px; 
+        top: 501px; 
         position: absolute; 
         width: 364px;
         height: 158px;
@@ -322,7 +323,7 @@ section .anchor {
     #RoundedRectangle4_0 
     { 
         left: 932px; 
-        top: 558px; 
+        top: 448px; 
         position: absolute; 
         width: 390px;
         height: 176px;
@@ -332,7 +333,7 @@ section .anchor {
     #RoundedRectangle5_0 
     { 
         left: 841px; 
-        top: 589px; 
+        top: 479px; 
         position: absolute; 
         width: 193px;
         height: 168px;
@@ -342,7 +343,7 @@ section .anchor {
     #Layer25copy 
     { 
         left: 929px; 
-        top: 205px; 
+        top: 95px; 
         position: absolute; 
         width: 409px;
         height: 491px;
@@ -351,7 +352,7 @@ section .anchor {
     #Layer24a
     { 
         left: 220px; 
-        top: 499px; 
+        top: 389px; 
         position: absolute; 
         width: 517px;
         height: 250px;
@@ -360,7 +361,7 @@ section .anchor {
     #Layer24b
     { 
         left: 718px; 
-        top: 250px; 
+        top: 140px; 
         position: absolute; 
         width: 357px;
         height: 499px;
